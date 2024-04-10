@@ -15,7 +15,7 @@ import json
 
 def remove_nulls(s):
     r'''
-    Postgres doesn't support strings with the null character \x00 in them, but twitter does.
+    Postgres. doesn't support strings with the null character \x00 in them, but twitter does.
     This helper function replaces the null characters with an escaped version so that they can be loaded into postgres.
     Technically, this means the data in postgres won't be an exact match of the data in twitter,
     and there is no way to get the original twitter data back from the data in postgres.
